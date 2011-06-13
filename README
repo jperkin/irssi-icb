@@ -1,0 +1,19 @@
+compile:
+
+ ./configure --with-irssi=~/src/irssi-0.7.98.CVS
+ make
+ make install
+
+load in irssi:
+
+ /LOAD icb
+ /SERVER -icbnet icb default.icb.net
+
+to make autoconnecting etc. work you'll need to edit config file and add to
+chatnets section:
+
+ icbnet = { type = "ICB"; };
+
+and then:
+
+ /SERVER ADD -auto -icbnet icbnet default.icb.net
