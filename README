@@ -1,8 +1,15 @@
 compile:
 
- ./configure --with-irssi=~/src/irssi-0.7.98.CVS
+ ./configure --with-irssi=~/src/irssi-0.8.15
  make
+
+install globally:
+
  make install
+
+install in home directory:
+
+ make user_install
 
 load in irssi:
 
