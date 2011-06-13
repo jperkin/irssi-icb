@@ -1,4 +1,4 @@
-AC_INIT([irssi-icb], [0.15], [jonathan@perkin.org.uk])
+AC_INIT([irssi-icb], [0.16-dev], [jonathan@perkin.org.uk])
 AC_PREREQ([2.61])
 
 AC_CONFIG_HEADERS(config.h)
