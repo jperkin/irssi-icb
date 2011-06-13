@@ -30,7 +30,7 @@ FORMAT_REC fecommon_icb_formats[] = {
 	{ "status", "[$0] $1", 2, { 0, 0 } },
 	{ "important", "[$0!] $1", 2, { 0, 0 } },
 	{ "status", "{error [Error]} $0", 1, { 0 } },
-	{ "beep", "[beep] $1 beeps you", 1, { 0 } },
+	{ "beep", "[Beep] $1 beeps you", 1, { 0 } },
 
 	{ NULL, NULL, 0 }
 };
