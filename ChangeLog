@@ -1,0 +1,58 @@
+Author: Jonathan Perkin <jonathan@perkin.org.uk>
+Date:   Mon Jun 13 23:49:45 2011 +0100
+
+    Autotools cleanup:
+    
+     - remove generated and obsolete/empty files
+     - move configure.in to configure.ac
+     - create autorun.sh to generate stuff
+     - update configure.ac and Makefile.am's to newer constructs
+
+Author: Jonathan Perkin <jonathan@perkin.org.uk>
+Date:   Mon Jun 13 22:58:34 2011 +0100
+
+    Add myself.
+
+Author: Jonathan Perkin <jonathan@perkin.org.uk>
+Date:   Mon Jun 13 22:40:23 2011 +0100
+
+    Apply remaining NetBSD patches:
+    
+     - Correctly handle 255 character limit for ICB messages
+     - Track nicknames correctly (Matt Dunford)
+     - Track topic changes
+     - Support /names and track on join
+     - Sanitise /who output (Thomas Klausner)
+     - Implement commands through irssi signals
+    
+    and a couple of other misc cleanups.
+
+Author: Jonathan Perkin <jonathan@perkin.org.uk>
+Date:   Mon Jun 13 19:20:43 2011 +0100
+
+    NetBSD patch-ai, capitalise beep message to match others.
+
+Author: Jonathan Perkin <jonathan@perkin.org.uk>
+Date:   Mon Jun 13 19:19:34 2011 +0100
+
+    NetBSD patch-ae, build against glib2.
+
+Author: Jonathan Perkin <jonathan@perkin.org.uk>
+Date:   Mon Jun 13 19:19:03 2011 +0100
+
+    NetBSD patch-ac, add a bunch more ICB commands.
+
+Author: Jonathan Perkin <jonathan@perkin.org.uk>
+Date:   Mon Jun 13 19:14:17 2011 +0100
+
+    NetBSD patch-aa, build module correctly on OSX.
+
+Author: Jonathan Perkin <jonathan@perkin.org.uk>
+Date:   Mon Jun 13 19:11:50 2011 +0100
+
+    NetBSD patch-ad, clarify the README.
+
+Author: Jonathan Perkin <jonathan@perkin.org.uk>
+Date:   Mon Jun 13 19:07:09 2011 +0100
+
+    irssi-icb-0.14 pristine sources
