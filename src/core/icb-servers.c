@@ -39,6 +39,9 @@ SERVER_REC *icb_server_init_connect(SERVER_CONNECT_REC *conn)
 	server = g_new0(ICB_SERVER_REC, 1);
 	server->chat_type = ICB_PROTOCOL;
 
+	server->silentwho = FALSE;
+	server->updatenicks = FALSE;
+
         server->recvbuf_size = 256;
 	server->recvbuf = g_malloc(server->recvbuf_size);
 
@@ -113,7 +116,6 @@ static void send_message(SERVER_REC *server, const char *target,
 			 const char *msg, int target_type)
 {
 	ICB_SERVER_REC *icbserver;
-        char *str;
 
         icbserver = ICB_SERVER(server);
 	g_return_if_fail(server != NULL);
@@ -125,9 +127,7 @@ static void send_message(SERVER_REC *server, const char *target,
                 icb_send_open_msg(icbserver, msg);
 	} else {
 		/* private message */
-                str = g_strconcat(target, " ", msg, NULL);
-		icb_command(icbserver, "m", str, NULL);
-                g_free(str);
+		icb_send_private_msg(icbserver, target, msg);
 	}
 }
 

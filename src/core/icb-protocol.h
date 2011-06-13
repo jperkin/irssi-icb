@@ -4,6 +4,8 @@
 #define ICB_PROTOCOL_LEVEL 1
 
 void icb_send_open_msg(ICB_SERVER_REC *server, const char *text);
+void icb_send_private_msg(ICB_SERVER_REC *server, const char *target,
+		const char *text);
 void icb_command(ICB_SERVER_REC *server, const char *cmd,
 		 const char *args, const char *id);
 void icb_protocol(ICB_SERVER_REC *server, const char *level,

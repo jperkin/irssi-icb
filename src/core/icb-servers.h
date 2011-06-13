@@ -31,6 +31,9 @@ struct _ICB_SERVER_REC {
 	unsigned char *sendbuf;
 	int sendbuf_size;
 
+	int silentwho;		/* silence /who output when updating nicks */
+	int updatenicks;	/* parse /who output for topic/nicks */
+
 	unsigned char *recvbuf;
 	int recvbuf_size, recvbuf_pos;
         int recvbuf_next_packet;
