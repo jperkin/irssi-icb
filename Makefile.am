@@ -1,5 +1,11 @@
 SUBDIRS = src
 
+DISTCLEANFILES  = Makefile.in aclocal.m4 config.guess config.h.in config.sub
+DISTCLEANFILES += configure depcomp install-sh ltmain.sh missing
+
+distclean-local:
+	-rm -rf autom4te.cache
+
 dist-hook:
 	cd ${top_srcdir} && \
 	    git log --pretty=medium | grep -v '^commit' >${distdir}/ChangeLog
