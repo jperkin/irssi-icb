@@ -1,9 +1,9 @@
 moduledir = $(libdir)/irssi/modules
 
 module_LTLIBRARIES = libicb_core.la
-libicb_core_la_LDFLAGS = -avoid-version
+libicb_core_la_LDFLAGS = -module -avoid-version
 
-INCLUDES = \
+AM_CPPFLAGS = \
 	$(GLIB_CFLAGS) \
 	-I$(IRSSI_INCLUDE) -I$(IRSSI_INCLUDE)/src \
 	-I$(IRSSI_INCLUDE)/src/core
