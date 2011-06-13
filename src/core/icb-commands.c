@@ -32,6 +32,8 @@ static char *icb_commands[] = {
 
 	"invite", "v", "echoback", "name", "motd", "topic", "status",
 	"boot", "pass", "drop", "shutdown", "wall",
+	"whereis", "brick", "away", "noaway", "nobeep", "cancel", 
+	"exclude", "news", "notify", "s_help", "shuttime", "talk", "hush",
         NULL
 };
 
