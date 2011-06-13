@@ -1,4 +1,16 @@
 Author: Jonathan Perkin <jonathan@perkin.org.uk>
+Date:   Mon Jun 13 23:53:48 2011 +0100
+
+    Update example to recent irssi, and add user_install option.
+
+Author: Jonathan Perkin <jonathan@perkin.org.uk>
+Date:   Mon Jun 13 23:52:11 2011 +0100
+
+    Generate the ChangeLog from git, using:
+    
+      $ git log --pretty=medium | grep -v ^comm >ChangeLog
+
+Author: Jonathan Perkin <jonathan@perkin.org.uk>
 Date:   Mon Jun 13 23:49:45 2011 +0100
 
     Autotools cleanup:
