@@ -14,6 +14,7 @@ libicb_core_la_SOURCES = \
 	icb-channels.c \
 	icb-commands.c \
 	icb-core.c \
+	icb-nicklist.c \
 	icb-queries.c \
 	icb-servers-reconnect.c \
 	icb-protocol.c \
@@ -24,6 +25,7 @@ noinst_HEADERS = \
 	icb.h \
 	icb-channels.h \
 	icb-commands.h \
+	icb-nicklist.h \
 	icb-protocol.h \
 	icb-queries.h \
 	icb-servers.h \
