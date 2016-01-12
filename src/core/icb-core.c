@@ -156,3 +156,11 @@ void icb_core_deinit(void)
 	signal_emit("chat protocol deinit", 1, chat_protocol_find("ICB"));
 	chat_protocol_unregister("ICB");
 }
+
+#ifdef IRSSI_ABI_VERSION
+void
+icb_core_abicheck(int * version)
+{
+	*version = IRSSI_ABI_VERSION;
+}
+#endif

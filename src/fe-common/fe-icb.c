@@ -531,3 +531,11 @@ void fe_icb_deinit(void)
 
 	signal_remove("server add fill", (SIGNAL_FUNC) sig_server_add_fill);
 }
+
+#ifdef IRSSI_ABI_VERSION
+void
+fe_icb_abicheck(int * version)
+{
+	*version = IRSSI_ABI_VERSION;
+}
+#endif
