@@ -120,7 +120,8 @@ static void event_personal(ICB_SERVER_REC *server, const char *data)
 	char **args;
 
 	args = icb_split(data, 2);
-	signal_emit("message private", 4, server, args[1], args[0], "");
+	signal_emit("message private", 5, server, args[1], args[0], "",
+		    server->nick);
         icb_split_free(args);
 }
 
