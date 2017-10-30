@@ -120,7 +120,8 @@ static void event_personal(ICB_SERVER_REC *server, const char *data)
 	char **args;
 
 	args = icb_split(data, 2);
-	signal_emit("message private", 4, server, args[1], args[0], "");
+	signal_emit("message private", 5, server, args[1], args[0], "",
+		    server->nick);
         icb_split_free(args);
 }
 
@@ -531,3 +532,11 @@ void fe_icb_deinit(void)
 
 	signal_remove("server add fill", (SIGNAL_FUNC) sig_server_add_fill);
 }
+
+#ifdef IRSSI_ABI_VERSION
+void
+fe_icb_abicheck(int * version)
+{
+	*version = IRSSI_ABI_VERSION;
+}
+#endif
